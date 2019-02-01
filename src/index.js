@@ -7,9 +7,9 @@ const lipButtonsNode = document.getElementById('eye-buttons');
 
 
 const hairColors = [
-    'red',
-    'blue',
-    'green'
+    'hair-red',
+    'hair-blue',
+    'hair-green'
 ];
 
 const eyeColors = [
@@ -31,9 +31,13 @@ for(let index = 0; index < hairColors.length; index++) {
     hairButtonNode.textContent = hairColor;
     hairButtonNode.value = hairColor;
 
-    console.log(hairButtonNode);
+    hairButtonNode.addEventListener('click', function(){
+        hair(hairColor);
+    });
 
     hairButtonsNode.appendChild(hairButtonNode);
+}
 
-    // hairButtonsNode.classList.add(hairButtonNode);
+function hair(hairColor) {
+    canvasHairNode.classList.add(hairColor);
 }
