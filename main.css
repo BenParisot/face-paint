@@ -1,0 +1,17 @@
+#canvas-hair {
+    width: 600px;
+    height: 432px;
+    background-image: url('../assets/hair.png');
+}
+
+.hair-red {
+    background: red;
+}
+
+.hair-blue {
+    background: blue;
+}
+
+.hair-green {
+    background: green;
+}
