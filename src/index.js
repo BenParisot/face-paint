@@ -32,6 +32,7 @@ for(let index = 0; index < hairColors.length; index++) {
     hairButtonNode.value = hairColor;
 
     hairButtonNode.addEventListener('click', function(){
+        canvasHairNode.classList.remove(hairColor);
         hair(hairColor);
     });
 
@@ -39,5 +40,10 @@ for(let index = 0; index < hairColors.length; index++) {
 }
 
 function hair(hairColor) {
+    canvasHairNode.classList = '';
     canvasHairNode.classList.add(hairColor);
+
+
+
+    console.log(canvasHairNode);
 }
