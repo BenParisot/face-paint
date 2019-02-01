@@ -2,6 +2,30 @@
     width: 600px;
     height: 432px;
     background-image: url('../assets/hair.png');
+    padding: 0px auto;
+    position: absolute;
+    z-index: -2;
+}
+
+#canvas-eyes {
+    width: 125px;
+    height: 55px;
+    margin-left: 238px;
+    margin-top: 110px;
+    background-image: url('../assets/eyes.png');
+    position: absolute;
+    z-index; -1;
+}
+
+#canvas-lips {
+    width: 125px;
+    height: 65px;
+    margin: 0px auto;
+    margin-left: 238px;
+    margin-top: 165px;
+    background-image: url('../assets/lips.png');
+    position: absolute;
+    z-index; 0;
 }
 
 .hair-red {
