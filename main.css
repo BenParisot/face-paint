@@ -8,24 +8,24 @@
 }
 
 #canvas-eyes {
-    width: 125px;
-    height: 55px;
-    margin-left: 238px;
-    margin-top: 110px;
+    width: 95px;
+    height: 40px;
+    margin-left: 250px;
+    margin-top: 120px;
     background-image: url('../assets/eyes.png');
     position: absolute;
-    z-index; -1;
+    z-index: -1;
 }
 
 #canvas-lips {
-    width: 125px;
-    height: 65px;
+    width: 60px;
+    height: 60px;
     margin: 0px auto;
-    margin-left: 238px;
-    margin-top: 165px;
-    background-image: url('../assets/lips.png');
+    margin-left: 270px;
+    margin-top: 170px;
+    background-image: url('../assets/lips-square.png');
     position: absolute;
-    z-index; 0;
+    z-index: 0;
 }
 
 .hair-red {

@@ -4,6 +4,7 @@ const canvasLipNode = document.getElementById('canvas-lips');
 const hairButtonsNode = document.getElementById('hair-buttons');
 const eyeButtonsNode = document.getElementById('eye-buttons');
 const lipButtonsNode = document.getElementById('eye-buttons');
+const randomButtonNode = document.getElementById('random-button');
 
 
 const hairColors = [
@@ -84,3 +85,22 @@ function lip(lipColor) {
     canvasLipNode.classList = '';
     canvasLipNode.classList.add(lipColor);
 }
+
+randomButtonNode.addEventListener('click', function(){
+    random();
+});
+
+function random() {
+    let randomHair = hairColors[Math.floor(Math.random() * hairColors.length)];
+    let randomEye = eyeColors[Math.floor(Math.random() * eyeColors.length)];
+    let randomLip = lipColors[Math.floor(Math.random() * lipColors.length)];
+
+    console.log(randomHair, randomEye, randomLip);
+
+}
+
+
+
+
+
+// console.log(randomButtonNode, randomHair, randomEye, randomLip);
