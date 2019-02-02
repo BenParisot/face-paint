@@ -19,9 +19,9 @@ const eyeColors = [
 ];
 
 const lipColors = [
-    'pink',
-    'coral',
-    'purple'
+    'lip-pink',
+    'lip-coral',
+    'lip-purple'
 ];
 
 
@@ -34,7 +34,6 @@ for(let index = 0; index < hairColors.length; index++) {
     hairButtonNode.value = hairColor;
 
     hairButtonNode.addEventListener('click', function(){
-        canvasHairNode.classList.remove(hairColor);
         hair(hairColor);
     });
 
@@ -55,7 +54,6 @@ for(let index = 0; index < eyeColors.length; index++) {
     eyeButtonNode.value = eyeColor;
 
     eyeButtonNode.addEventListener('click', function(){
-        canvasEyeNode.classList.remove(eyeColor);
         eye(eyeColor);
     });
 
@@ -67,23 +65,22 @@ function eye(eyeColor) {
     canvasEyeNode.classList.add(eyeColor);
 }
 
-// //lip color change
-// for(let index = 0; index < hairColors.length; index++) {
-//     const hairColor = hairColors[index];
+//lip color change
+for(let index = 0; index < lipColors.length; index++) {
+    const lipColor = lipColors[index];
 
-//     const hairButtonNode = document.createElement('button');
-//     hairButtonNode.textContent = hairColor;
-//     hairButtonNode.value = hairColor;
+    const lipButtonNode = document.createElement('button');
+    lipButtonNode.textContent = lipColor;
+    lipButtonNode.value = lipColor;
 
-//     hairButtonNode.addEventListener('click', function(){
-//         canvasHairNode.classList.remove(hairColor);
-//         hair(hairColor);
-//     });
+    lipButtonNode.addEventListener('click', function(){
+        lip(lipColor);
+    });
 
-//     hairButtonsNode.appendChild(hairButtonNode);
-// }
+    lipButtonsNode.appendChild(lipButtonNode);
+}
 
-// function hair(hairColor) {
-//     canvasHairNode.classList = '';
-//     canvasHairNode.classList.add(hairColor);
-// }
+function lip(lipColor) {
+    canvasLipNode.classList = '';
+    canvasLipNode.classList.add(lipColor);
+}
