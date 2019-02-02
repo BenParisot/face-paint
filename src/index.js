@@ -14,8 +14,8 @@ const hairColors = [
 ];
 
 const eyeColors = [
-    'eye-aqua',
-    'eye-yellow',
+    'eye-darkmagenta',
+    'eye-slateblue',
     'eye-orange'
 ];
 
@@ -100,8 +100,3 @@ function random() {
     lip(randomLip);
 }
 
-
-
-
-
-// console.log(randomButtonNode, randomHair, randomEye, randomLip);
