@@ -13,9 +13,9 @@ const hairColors = [
 ];
 
 const eyeColors = [
-    'aqua',
-    'yellow',
-    'orange'
+    'eye-aqua',
+    'eye-yellow',
+    'eye-orange'
 ];
 
 const lipColors = [
@@ -24,6 +24,8 @@ const lipColors = [
     'purple'
 ];
 
+
+//hair color change
 for(let index = 0; index < hairColors.length; index++) {
     const hairColor = hairColors[index];
 
@@ -42,8 +44,46 @@ for(let index = 0; index < hairColors.length; index++) {
 function hair(hairColor) {
     canvasHairNode.classList = '';
     canvasHairNode.classList.add(hairColor);
-
-
-
-    console.log(canvasHairNode);
 }
+
+//eye color change
+for(let index = 0; index < eyeColors.length; index++) {
+    const eyeColor = eyeColors[index];
+
+    const eyeButtonNode = document.createElement('button');
+    eyeButtonNode.textContent = eyeColor;
+    eyeButtonNode.value = eyeColor;
+
+    eyeButtonNode.addEventListener('click', function(){
+        canvasEyeNode.classList.remove(eyeColor);
+        eye(eyeColor);
+    });
+
+    eyeButtonsNode.appendChild(eyeButtonNode);
+}
+
+function eye(eyeColor) {
+    canvasEyeNode.classList = '';
+    canvasEyeNode.classList.add(eyeColor);
+}
+
+// //lip color change
+// for(let index = 0; index < hairColors.length; index++) {
+//     const hairColor = hairColors[index];
+
+//     const hairButtonNode = document.createElement('button');
+//     hairButtonNode.textContent = hairColor;
+//     hairButtonNode.value = hairColor;
+
+//     hairButtonNode.addEventListener('click', function(){
+//         canvasHairNode.classList.remove(hairColor);
+//         hair(hairColor);
+//     });
+
+//     hairButtonsNode.appendChild(hairButtonNode);
+// }
+
+// function hair(hairColor) {
+//     canvasHairNode.classList = '';
+//     canvasHairNode.classList.add(hairColor);
+// }
