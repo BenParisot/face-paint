@@ -95,8 +95,9 @@ function random() {
     let randomEye = eyeColors[Math.floor(Math.random() * eyeColors.length)];
     let randomLip = lipColors[Math.floor(Math.random() * lipColors.length)];
 
-    console.log(randomHair, randomEye, randomLip);
-
+    hair(randomHair);
+    eye(randomEye);
+    lip(randomLip);
 }
 
 
