@@ -1,13 +1,43 @@
 body {
     text-align: center;
-    /* background: pink; */
+    background: pink;
 }
 
+header {
+
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-weight: bolder;
+    font-size: 80px;
+    background: -webkit-linear-gradient(45deg, #fc2947, #f278fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 55px;
+    color: #7d2585;
+}
+
+main {
+    font-family: 'Assistant', sans-serif;
+}
+
+#main-canvas {
+    border: 1px solid black;
+    background: white;
+    padding-bottom: 25px;
+    width: 1000px;
+    margin: 10px auto;
+}
 #canvas-hair {
     width: 1000px;
     height: 800px;
     background-image: url('../assets/hair.png');
-    padding: 0px auto;
+    padding: 0px auto 35px auto;
     /* position: absolute; */
     z-index: -2;
     margin: 0px auto;
@@ -21,7 +51,7 @@ body {
     position: absolute;
     z-index: 0;
     margin-left: 350px;
-    margin-top: 500px;
+    margin-top: 490px;
 }
 
 #canvas-lips {
@@ -32,33 +62,37 @@ body {
     position: absolute;
     z-index: 0;
     margin-left: 350px;
-    margin-top: 625px;
+    margin-top: 615px;
 }
 
 #all-buttons {
-    background: white;
+    float: left;
+}
+
+#all-color-buttons {
     width: 600px;
     margin: 0px auto; 
     padding: 10px 0px;
 }
 
-#all-buttons button {
+#all-color-buttons button {
     font-size: 16px;
     margin: 5px 0px;
     width: 40px;
     height: 40px;
-    border: none;
+    border: 1px solid grey;;
 }
 
 
 
-#all-buttons p {
+#all-color-buttons p {
     display: inline-block;
 }
 
 .choice-buttons {
     font-size: 22px;
     margin-right: 10px;
+    color: white;
 }
 
 #hair-buttons, #eye-buttons, #lip-buttons {
@@ -183,11 +217,13 @@ body {
     background: #fcbacb;
 }
 
-
-
-
-
-
 .random-button {
     border: 1px solid black;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+footer {
+    padding: 50px 0px;
+    color: darkmagenta;
 }
