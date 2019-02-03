@@ -9,20 +9,38 @@ const randomButtonNode = document.getElementById('random-button');
 
 const hairColors = [
     'hair-red',
-    'hair-blue',
-    'hair-green'
+    'hair-griffindor',
+    'hair-ironman',
+    'hair-merlin',
+    'hair-jam',
+    'hair-popcorn',
+    'hair-screwdriver',
+    'hair-blonde',
+    'hair-brunette',
 ];
 
 const eyeColors = [
-    'eye-darkmagenta',
-    'eye-slateblue',
-    'eye-orange'
+    'eye-strawberry',
+    'eye-magenta',
+    'eye-hotpink',
+    'eye-rosewood',
+    'eye-coral',
+    'eye-peach',
+    'eye-rouge',
+    'eye-fuscia',
+    'eye-taffy',
 ];
 
 const lipColors = [
+    'lip-blush',
+    'lip-punch',
+    'lip-bubblegum',
     'lip-pink',
-    'lip-coral',
-    'lip-purple'
+    'lip-rose',
+    'lip-salmon',
+    'lip-ballet',
+    'lip-flamingo',
+    'lip-lemonade'
 ];
 
 

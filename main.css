@@ -36,61 +36,155 @@ body {
     background: white;
     width: 600px;
     margin: 0px auto; 
+    padding: 10px 0px;
 }
 
 #all-buttons button {
     font-size: 16px;
     margin: 5px 0px;
+    width: 40px;
+    height: 40px;
+    border: none;
 }
+
+
 
 #all-buttons p {
     display: inline-block;
 }
 
-#hair-buttons {
+.choice-buttons {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+#hair-buttons, #eye-buttons, #lip-buttons {
     display: inline-block;
 }
 
-#eye-buttons {
-    display: inline-block;
-}
-
-#lip-buttons {
-    display: inline-block;
-}
+/* hair colors */
 
 .hair-red {
-    background: red;
+    background: #ff0000;
 }
 
-.hair-blue {
-    background: blue;
+.hair-griffindor {
+    background: #ee204d;
 }
 
-.hair-green {
-    background: green;
+.hair-ironman {
+    background: #fc2947;
 }
 
-.eye-darkmagenta {
-    background: darkmagenta;
+.hair-merlin {
+    background: #cb4154;
 }
 
-.eye-slateblue {
-    background: slateblue;
+.hair-jam {
+    background: #e3256b;
 }
 
-.eye-orange {
-    background: orange;
+.hair-popcorn {
+    background: #fdd7e4;
+}
+
+.hair-screwdriver {
+    background: #95918c;
+}
+
+.hair-blonde {
+    background: #ffef6c;
+}
+
+.hair-brunette {
+    background: #572c29;
+}
+
+
+
+
+
+/* eye colors */
+
+.eye-strawberry {
+    background: #fc4c4e;
+}
+
+.eye-magenta {
+    background: #e11584;
+}
+
+.eye-hotpink {
+    background: #ff1694;
+} 
+
+.eye-rosewood {
+    background: #9e4244;
+}
+
+.eye-coral {
+    background: #fe7d6a;
+}
+
+.eye-peach {
+    background: #fc9483;
+}
+
+.eye-rouge {
+    background: #f26b8e;
+}
+
+.eye-fuscia {
+    background: #fc46aa;
+}
+
+.eye-taffy {
+    background: #fa86c4;
+}
+
+
+/* lip colors */
+.lip-blush {
+    background: #fe7d6a;
+}
+
+.lip-punch {
+    background: #f25278;
+}
+
+.lip-bubblegum {
+    background: #fd5da8;
 }
 
 .lip-pink {
-    background: pink;
+    background:#f699cd;
 }
 
-.lip-coral {
-    background: coral;
+.lip-rose {
+    background: #fc94af;
 }
 
-.lip-purple {
-    background: purple;
+.lip-salmon {
+    background: #fdab9f;
+}
+
+.lip-ballet {
+    background: #f79ac0;
+}
+
+.lip-flamingo {
+    background: #fda4ba;
+}
+
+.lip-lemonade {
+    background: #fcbacb;
+}
+
+
+
+
+
+
+.random-button {
+    border: 1px solid black;
 }
