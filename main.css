@@ -15,25 +15,24 @@ body {
 }
 
 #canvas-eyes {
-    width: 200px;
-    height: 83px;
-    background-image: url('../assets/eyes-small.png');
+    width: 300px;
+    height: 125px;
+    background-image: url('../assets/eyes-md.png');
     position: absolute;
     z-index: 0;
-    margin-left: 400px;
+    margin-left: 350px;
     margin-top: 500px;
 }
 
 #canvas-lips {
-    width: 200px;
-    height: 100px;
+    width: 300px;
+    height: 150px;
     margin: 0px auto;
-    margin-top: 249px; 
-    background-image: url('../assets/lips-small.png');
+    background-image: url('../assets/lips-md.png');
     position: absolute;
     z-index: 0;
-    margin-left: 400px;
-    margin-top: 583px;
+    margin-left: 350px;
+    margin-top: 625px;
 }
 
 #all-buttons {
