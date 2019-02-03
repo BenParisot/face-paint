@@ -8,7 +8,7 @@ body {
     height: 800px;
     background-image: url('../assets/hair.png');
     padding: 0px auto;
-    position: absolute;
+    /* position: absolute; */
     z-index: -2;
     margin: 0px auto;
 
