@@ -1,35 +1,39 @@
 body {
     text-align: center;
-    background: pink;
+    /* background: pink; */
 }
 
 #canvas-hair {
-    width: 600px;
-    height: 549px;
+    width: 1000px;
+    height: 800px;
     background-image: url('../assets/hair.png');
     padding: 0px auto;
-    /* position: absolute; */
+    position: absolute;
     z-index: -2;
     margin: 0px auto;
 
 }
 
 #canvas-eyes {
-    width: 600px;
-    height: 249px;
-    background-image: url('../assets/eyes.png');
+    width: 200px;
+    height: 83px;
+    background-image: url('../assets/eyes-small.png');
     position: absolute;
     z-index: 0;
+    margin-left: 400px;
+    margin-top: 500px;
 }
 
 #canvas-lips {
-    width: 600px;
-    height: 300px;
+    width: 200px;
+    height: 100px;
     margin: 0px auto;
     margin-top: 249px; 
-    background-image: url('../assets/lips.png');
+    background-image: url('../assets/lips-small.png');
     position: absolute;
     z-index: 0;
+    margin-left: 400px;
+    margin-top: 583px;
 }
 
 #all-buttons {
