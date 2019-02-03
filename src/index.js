@@ -3,7 +3,7 @@ const canvasEyeNode = document.getElementById('canvas-eyes');
 const canvasLipNode = document.getElementById('canvas-lips');
 const hairButtonsNode = document.getElementById('hair-buttons');
 const eyeButtonsNode = document.getElementById('eye-buttons');
-const lipButtonsNode = document.getElementById('eye-buttons');
+const lipButtonsNode = document.getElementById('lip-buttons');
 const randomButtonNode = document.getElementById('random-button');
 
 
@@ -31,8 +31,8 @@ for(let index = 0; index < hairColors.length; index++) {
     const hairColor = hairColors[index];
 
     const hairButtonNode = document.createElement('button');
-    hairButtonNode.textContent = hairColor;
     hairButtonNode.value = hairColor;
+    hairButtonNode.classList.add(hairColor);
 
     hairButtonNode.addEventListener('click', function(){
         hair(hairColor);
@@ -51,8 +51,8 @@ for(let index = 0; index < eyeColors.length; index++) {
     const eyeColor = eyeColors[index];
 
     const eyeButtonNode = document.createElement('button');
-    eyeButtonNode.textContent = eyeColor;
     eyeButtonNode.value = eyeColor;
+    eyeButtonNode.classList.add(eyeColor);
 
     eyeButtonNode.addEventListener('click', function(){
         eye(eyeColor);
@@ -71,8 +71,8 @@ for(let index = 0; index < lipColors.length; index++) {
     const lipColor = lipColors[index];
 
     const lipButtonNode = document.createElement('button');
-    lipButtonNode.textContent = lipColor;
     lipButtonNode.value = lipColor;
+    lipButtonNode.classList.add(lipColor);
 
     lipButtonNode.addEventListener('click', function(){
         lip(lipColor);
